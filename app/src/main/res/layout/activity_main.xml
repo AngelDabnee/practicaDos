@@ -5,14 +5,124 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ejemplodos"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="center"
+        android:layout_marginHorizontal="30dp"
+        />
     <TextView
+        android:id="@+id/text_nombre_completo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/nombre_completo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/text_matricula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/matricula"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_nombre_completo"
+        android:textSize="20sp"
+
+        />
+    <TextView
+        android:id="@+id/text_carrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Carrera"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_matricula"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/text_nombre_carrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/carrera_nombre"
+        app:layout_constraintStart_toEndOf="@id/text_carrera"
+        app:layout_constraintTop_toBottomOf= "@id/text_matricula"
+
+        />
+
+    <TextView
+        android:id="@+id/text_grupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/grupo"
+        app:layout_constraintTop_toBottomOf="@id/text_carrera"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/text_grupo_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/grupo_nombre"
+        app:layout_constraintStart_toEndOf="@id/text_grupo"
+        app:layout_constraintTop_toBottomOf="@id/text_nombre_carrera"
+        />
+
+    <TextView
+        android:id="@+id/text_turno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/turno"
+        app:layout_constraintStart_toEndOf="@id/text_grupo_nombre"
+        app:layout_constraintTop_toBottomOf="@id/text_nombre_carrera"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/text_turno_horario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/turno_horario"
+        app:layout_constraintStart_toEndOf="@id/text_turno"
+        app:layout_constraintTop_toBottomOf="@id/text_nombre_carrera"
+        android:layout_marginStart="16dp"
+        />
+
+    <Button
+        android:id="@+id/button_promedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ver_promedio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="16dp"
+
+        />
+
+    <Button
+        android:id="@+id/button_resumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ver_resumen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="16dp"
+         />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

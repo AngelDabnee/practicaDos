@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "AngelDabnee.practicados"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "AngelDabnee.practicados"
         minSdk = 28
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 

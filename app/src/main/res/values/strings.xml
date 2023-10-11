@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">practicaDos2</string>
+    <string name="Carrera">Carrera:</string>
+    <string name="carrera_nombre">TSU.Desarrollo </string>
+    <string name="grupo">Grupo:</string>
+    <string name="grupo_nombre">4-5</string>
+    <string name="turno">Turno:</string>
+    <string name="turno_horario">Vespertino</string>
+    <string name="ver_promedio">Ver Promedio</string>
+    <string name="ver_resumen">Ver Resumen</string>
+    <string name="nombre_completo">Angel Dabnee Gonzalez Rodriguez</string>
+    <string name="matricula">22311046</string>
+
+
+
+
+
+
 </resources>
